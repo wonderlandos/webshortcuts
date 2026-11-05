@@ -1,0 +1,45 @@
+{
+ "name": "words are percent-encoded",
+ "steps": [
+  {
+   "do": "render",
+   "now": [
+    2026,
+    11,
+    5,
+    4,
+    9,
+    0,
+    0
+   ]
+  },
+  {
+   "do": "popover"
+  },
+  {
+   "do": "change",
+   "part": 1,
+   "text": "C++ & Rust/ação"
+  },
+  {
+   "do": "popover"
+  },
+  {
+   "do": "click",
+   "part": 2
+  }
+ ],
+ "expect": [
+  "open: https://en.wikipedia.org/w/index.php?search=C%2B%2B%20%26%20Rust%2Fa%C3%A7%C3%A3o"
+ ],
+ "absent": [
+  "ERROR"
+ ],
+ "plugin": "wonderlandos.webshortcuts",
+ "permissions": [
+  "open"
+ ],
+ "script": "bar.lua",
+ "kind": "menubar",
+ "entry": "bar"
+}

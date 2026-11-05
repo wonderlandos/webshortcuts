@@ -1,0 +1,40 @@
+{
+ "name": "with nothing typed the button opens the site",
+ "steps": [
+  {
+   "do": "render",
+   "now": [
+    2026,
+    11,
+    5,
+    4,
+    9,
+    0,
+    0
+   ]
+  },
+  {
+   "do": "popover"
+  },
+  {
+   "do": "click",
+   "part": 13
+  }
+ ],
+ "expect": [
+  "\"label\":\"Open\"",
+  "man.archlinux.org\"",
+  "open: https://man.archlinux.org/"
+ ],
+ "absent": [
+  "Search for",
+  "ERROR"
+ ],
+ "plugin": "wonderlandos.webshortcuts",
+ "permissions": [
+  "open"
+ ],
+ "script": "bar.lua",
+ "kind": "menubar",
+ "entry": "bar"
+}

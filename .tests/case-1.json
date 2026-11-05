@@ -1,0 +1,48 @@
+{
+ "name": "words, then a site's Search opens its search",
+ "steps": [
+  {
+   "do": "render",
+   "now": [
+    2026,
+    11,
+    5,
+    4,
+    9,
+    0,
+    0
+   ]
+  },
+  {
+   "do": "popover"
+  },
+  {
+   "do": "change",
+   "part": 1,
+   "text": "  pacman hooks "
+  },
+  {
+   "do": "popover"
+  },
+  {
+   "do": "click",
+   "part": 4
+  }
+ ],
+ "expect": [
+  "system-search-symbolic",
+  "What to look for",
+  "Search for \\\"pacman hooks\\\"",
+  "open: https://wiki.archlinux.org/index.php?search=pacman%20hooks"
+ ],
+ "absent": [
+  "ERROR"
+ ],
+ "plugin": "wonderlandos.webshortcuts",
+ "permissions": [
+  "open"
+ ],
+ "script": "bar.lua",
+ "kind": "menubar",
+ "entry": "bar"
+}
