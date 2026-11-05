@@ -1,0 +1,13 @@
+# The hub's publisher manifest (https://hub.wolos.org, docs/WOLHUB-TOML.md in hub-worker).
+# The hub reads it at connect and at every release: this repository is a plugin, its release file is the .wolplug.
+schema = 1
+kind = "plugin"
+id = "wonderlandos.webshortcuts"
+license = "GPL-2.0-or-later"
+asset = "wonderlandos.webshortcuts-*.wolplug"
+homepage = "https://github.com/wonderlandos/webshortcuts"
+min_wolos = "0.13"
+name = "Web Shortcuts"
+summary = "Search Wikipedia, the Arch Wiki, GitHub and nine more sites from the menu bar, in two clicks."
+icon = "icon.png"
+screenshots = ["preview.webp"]
